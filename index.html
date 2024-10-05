@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
+  <meta name="description">
     content="Welcome to Shivani's Portfolio. Full-Stack Web Developer and Android App Developer" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -1820,7 +1820,7 @@ rgb(225, 94, 235) 95%);">
               <i class='fas fa-user'></i>
             </div>
             <div class="field">
-              <input type="text" name="email" placeholder="Email" required>
+              <input type="email" name="email" placeholder="Email" required>
               <i class='fas fa-envelope'></i>
             </div>
             <div class="field">
@@ -1833,8 +1833,9 @@ rgb(225, 94, 235) 95%);">
             </div>
           </div>
           <div class="button-area">
+            <a href="mailto:shivaninagnathshinde@gmail.com" aria-label="Mail" target="_blank">
             <button type="submit">
-              Submit <i class="fa fa-paper-plane"></i></button>
+              Submit <i class="fa fa-paper-plane"></i></button></a>
           </div>
         </form>
       </div>
@@ -1849,8 +1850,7 @@ rgb(225, 94, 235) 95%);">
     <div class="box-container">
       <div class="box">
         <h3>Shivani's Portfolio</h3>
-        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Keep Rising
-          🚀. Connect with me over live chat!</p>
+        <p>Thank you for visiting Shivani's portfolio website. Connect with me over socials. </p>
       </div>
 
       <div class="box">
@@ -1860,12 +1860,11 @@ rgb(225, 94, 235) 95%);">
         <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
         <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
         <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-        <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
       </div>
 
       <div class="box">
         <h3>contact info</h3>
-        <p> <i class="fas fa-phone"></i>+91 817784383*</p>
+        <p> <i class="fas fa-phone"></i>+91 81778438**</p>
         <p> <i class="fas fa-envelope"></i>shivaninagnathshinde@gmail.com</p>
         <p> <i class="fas fa-map-marked-alt"></i>Pune, India-412206</p>
         <div class="share">
@@ -1874,8 +1873,8 @@ rgb(225, 94, 235) 95%);">
             target="_blank"></a>
           <a href="https://github.com/shinde57" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
           <a href="mailto:shivaninagnathshinde@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-          
-          <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+           <a class="instagram" aria-label="Instagram" href="https://www.instagram.com/isshinde57?igsh=MWhvb3J3djgzYmx3bA=="><i class="fab fa-instagram"
+              target="_blank"></i></a>
         </div>
       </div>
     </div>
@@ -2112,18 +2111,6 @@ rgb(225, 94, 235) 95%);">
       }
     }
 
-    // Start of Tawk.to Live Chat
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-    // End of Tawk.to Live Chat
-
 
     /* ===== SCROLL REVEAL ANIMATION ===== */
     const srtop = ScrollReveal({
@@ -2164,15 +2151,9 @@ rgb(225, 94, 235) 95%);">
     /* SCROLL PROJECTS */
     srtop.reveal('.work .box', { interval: 200 });
 
-    /* SCROLL EXPERIENCE */
-    srtop.reveal('.experience .timeline', { delay: 400 });
-    srtop.reveal('.experience .timeline .container', { interval: 400 });
-
     /* SCROLL CONTACT */
     srtop.reveal('.contact .container', { delay: 400 });
     srtop.reveal('.contact .container .form-group', { delay: 400 });
-
-
 
     var myIndex = 0;
     carousel();
